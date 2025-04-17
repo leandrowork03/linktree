@@ -1,30 +1,30 @@
-# Linktree Clone
+# **LinkTree - Project**
 
-Este é um clone simples do famoso serviço [Linktree](https://linktr.ee/), que permite criar uma página de links personalizada para compartilhar com seus amigos, familiares ou seguidores. O projeto foi desenvolvido utilizando HTML, CSS e JavaScript. 
+LinkTree é um projeto web desenvolvido utilizando **React**, **TypeScript**, **Firebase** e **Tailwind CSS**. O objetivo deste projeto é criar uma aplicação de páginas de links personalizada, permitindo que os usuários possam adicionar e gerenciar seus links de forma simples e eficaz. O sistema também conta com autenticação de usuários e funcionalidades de administração para garantir que apenas usuários autenticados possam interagir com os dados.
 
-## 💡 Visão Geral
+## **Tecnologias Utilizadas**
 
-Este projeto tem como objetivo replicar as funcionalidades básicas do Linktree, permitindo que os usuários possam adicionar, visualizar e personalizar links para serem compartilhados com outras pessoas.
+- **React**: Biblioteca para construção da interface de usuário com componentes reutilizáveis.
+- **TypeScript**: Linguagem com tipagem estática para garantir mais robustez e menos erros no código.
+- **Firebase**: Plataforma para autenticação, armazenamento de dados em tempo real e gerenciamento de usuários.
+- **Tailwind CSS**: Framework CSS utilitário para estilização rápida e responsiva.
+- **React Router**: Sistema de roteamento para navegação entre diferentes páginas dentro da aplicação.
 
-## 🛠 Tecnologias Utilizadas
+## **Funcionalidades**
 
-- HTML
-- CSS (Flexbox/Grid)
-- JavaScript
-- (Opções futuras: React, APIs, Backend)
+- **Roteamento de Páginas**: Utilizando o **React Router**, a aplicação é capaz de navegar entre diferentes páginas, como a página inicial e a área de administração.
+  
+- **Roteamento de Dados**: O sistema lida com o armazenamento e recuperação de dados através do **Firebase Firestore**, permitindo que os dados de links sejam salvos e acessados em tempo real.
 
-## 🎯 Funcionalidades
+- **Autenticação de Usuários**: Os usuários podem fazer login utilizando o sistema de **autenticação do Firebase**, com um sistema simples de login e senha. Apenas usuários autenticados poderão interagir com a aplicação.
 
-- Exibição de links personalizáveis.
-- Links dinâmicos com a possibilidade de adicionar novos.
-- Layout simples e responsivo, com bom funcionamento em dispositivos móveis e desktop.
-- Efeitos de hover e animações para uma navegação mais interativa.
+- **Sistema de Admin**: A aplicação possui uma área administrativa onde somente usuários logados podem adicionar, editar ou excluir links. Isso é garantido através de regras de segurança definidas no **Firebase**.
 
-## 🚀 Como Rodar Localmente
+- **Interface Responsiva**: O design da aplicação foi feito utilizando **Tailwind CSS**, tornando a aplicação responsiva e adaptável a diferentes dispositivos.
 
-Siga os passos abaixo para rodar o projeto em sua máquina local:
+## **Como Rodar o Projeto Localmente**
 
-1. Clone o repositório:
+### 1. **Clonar o repositório**
 
-   ```bash
-   git clone https://github.com/leandrowork03/linktree.git
+```bash
+git clone https://github.com/leandrowork03/linktree.git
