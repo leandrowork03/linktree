@@ -1,4 +1,4 @@
-import { FormEvent, useState } from "react"
+import { FormEvent, useEffect, useState } from "react"
 import { Header } from "../../components/header"
 import { Input } from "../../components/input"
 
@@ -7,11 +7,29 @@ import{
     setDoc,
     addDoc,
     getDoc,
+    doc,
 } from 'firebase/firestore'
 
 export function Networks(){
     const[linkedin, setLikedin] = useState("")
     const[github, setGithub] =useState("")
+
+    useEffect(()=>{
+
+        function loadingLinks(){
+            const docRef =doc(db, "social", "link")
+            getDoc(docRef)
+            .then((snapshot)=>{
+                if (snapshot.exists()) {
+                    setLikedin(snapshot.data()?.linkedin || "")
+                    setGithub(snapshot.data()?.github || "")
+                  }
+            })
+
+        }
+
+        loadingLinks()
+    },[])
 
     function handleRegister(e: FormEvent){
         e.preventDefault()
@@ -44,7 +62,7 @@ export function Networks(){
             <label className="text-white font-medium mt-2 mb-3">link GitHub</label>
             <Input
             type="url"
-            placeholder="digite a url do Linkedin..."
+            placeholder="digite a url do Github..."
             value={github}
             onChange={(e)=> setGithub(e.target.value)}
             />
