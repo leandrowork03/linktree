@@ -1,54 +1,30 @@
-# React + TypeScript + Vite
+# **LinkTree - Project**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LinkTree é um projeto web desenvolvido utilizando **React**, **TypeScript**, **Firebase** e **Tailwind CSS**. O objetivo deste projeto é criar uma aplicação de páginas de links personalizada, permitindo que os usuários possam adicionar e gerenciar seus links de forma simples e eficaz. O sistema também conta com autenticação de usuários e funcionalidades de administração para garantir que apenas usuários autenticados possam interagir com os dados.
 
-Currently, two official plugins are available:
+## **Tecnologias Utilizadas**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Biblioteca para construção da interface de usuário com componentes reutilizáveis.
+- **TypeScript**: Linguagem com tipagem estática para garantir mais robustez e menos erros no código.
+- **Firebase**: Plataforma para autenticação, armazenamento de dados em tempo real e gerenciamento de usuários.
+- **Tailwind CSS**: Framework CSS utilitário para estilização rápida e responsiva.
+- **React Router**: Sistema de roteamento para navegação entre diferentes páginas dentro da aplicação.
 
-## Expanding the ESLint configuration
+## **Funcionalidades**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Roteamento de Páginas**: Utilizando o **React Router**, a aplicação é capaz de navegar entre diferentes páginas, como a página inicial e a área de administração.
+  
+- **Roteamento de Dados**: O sistema lida com o armazenamento e recuperação de dados através do **Firebase Firestore**, permitindo que os dados de links sejam salvos e acessados em tempo real.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Autenticação de Usuários**: Os usuários podem fazer login utilizando o sistema de **autenticação do Firebase**, com um sistema simples de login e senha. Apenas usuários autenticados poderão interagir com a aplicação.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Sistema de Admin**: A aplicação possui uma área administrativa onde somente usuários logados podem adicionar, editar ou excluir links. Isso é garantido através de regras de segurança definidas no **Firebase**.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Interface Responsiva**: O design da aplicação foi feito utilizando **Tailwind CSS**, tornando a aplicação responsiva e adaptável a diferentes dispositivos.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## **Como Rodar o Projeto Localmente**
+
+### 1. **Clonar o repositório**
+
+```bash
+git clone https://github.com/leandrowork03/linktree.git
