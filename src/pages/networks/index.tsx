@@ -5,7 +5,6 @@ import { Input } from "../../components/input"
 import {db} from '../../services/firebaseConnection'
 import{
     setDoc,
-    addDoc,
     getDoc,
     doc,
 } from 'firebase/firestore'
