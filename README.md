@@ -1,3 +1,5 @@
+## **⚠️ Para o login é necessário pedir o login** 
+
 # **LinkTree - Project**
 
 LinkTree é um projeto web desenvolvido utilizando **React**, **TypeScript**, **Firebase** e **Tailwind CSS**. O objetivo deste projeto é criar uma aplicação de páginas de links personalizada, permitindo que os usuários possam adicionar e gerenciar seus links de forma simples e eficaz. O sistema também conta com autenticação de usuários e funcionalidades de administração para garantir que apenas usuários autenticados possam interagir com os dados.
